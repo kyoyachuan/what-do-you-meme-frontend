@@ -11,3 +11,15 @@
 input {
     width: 300px;
 }
+
+.image-container {
+    background: #EEE;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+}
