@@ -1,25 +1,58 @@
-.center{
+* {
+    padding:0px;
+    margin:0px;
+}
+
+#textBox {
     position:absolute;
-    height: X px;
-    width: Y px;
-    left:30%;
-    top:30%;
-    margin-top:- X/2 px;
-    margin-left:- Y/2 px;
+    top:50%; 
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.textWrap{
+    width: 1200px;
+    height: 100vh;
+}
+
+#textBox h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color:rgb(40, 49, 100);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 input {
-    width: 300px;
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#searchBtn{
+    background-color: #aaa;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+}
+
+#flexBox{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
 }
 
 .image-container {
-    background: #EEE;
-    display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
-    -ms-flex-direction: column;
-    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    display: -webkit-box;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.image-container img {
+    height: 250px;
+}
+
+.image-container p {
+    line-height: 20px;
 }
