@@ -43,6 +43,7 @@ $(
         //check if query len is valid
         if (userInput.val().length != 0) {
           // Call the AJAX req passing in the user search
+          $("#textBox").animate({top:'50px'}, 1000);
           getImageData(userInput.val());
         } else {
           userInput.focus();
