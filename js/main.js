@@ -18,7 +18,7 @@ $(
       // SEARCH BTN EVENT LISTENER
       searchBtn.on("click", function() {
         // Clear exisitng images
-        imageContainer.html("");
+        // imageContainer.html("");
         validateInput();
       }); // end of SEARCH BTN EVENT LISTENER
   
@@ -26,7 +26,7 @@ $(
       userInput.on("keyup", function(e) {
         if (e.keyCode == 13) {
           // Clear exisitng images
-          imageContainer.html("");
+          // imageContainer.html("");
           validateInput();
         }
       }); // end of USER SEARCH SUBMIT [ENTER BTN] EVENT LISTENER
@@ -43,10 +43,11 @@ $(
         //check if query len is valid
         if (userInput.val().length != 0) {
           // Call the AJAX req passing in the user search
-          $("#textBox").animate({top:'50px'}, 1000);
+          imageContainer.html("");
           getImageData(userInput.val());
         } else {
-          userInput.focus();
+          alert("Please fill in text on input bar!")
+          // userInput.focus();
         } // end of validation
       } //end of VALIDATE USER INPUT
   
@@ -54,7 +55,7 @@ $(
       function getImageData(query) {
         $.ajax({
           type: "GET",
-          url: `http://localhost:3000/search?input=${query}&n_result=${n_result}`,
+          url: `http://localhost:3000/search_by_text?input=${query}&n_result=${n_result}`,
           success: function(data) {
             // Call the handle Data function and pass the response
             handleData(data);
@@ -86,7 +87,7 @@ $(
       function pushImages(url, title) {
         // Build the HTML element
         let htmlText =
-          '<div class="img">' +
+          '<div>' +
           '<img data-caption="' +
           title +
           '" src="' +
