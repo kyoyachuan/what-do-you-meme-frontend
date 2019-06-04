@@ -1,5 +1,5 @@
 {
-  "search":
+  "search_by_text":
     [
       {
         "image_url": "https://picsum.photos/400/300/?random=1",
@@ -17,9 +17,9 @@
         "item_url": "https://picsum.photos/400/300/?random=3"
       },
       {
-        "image_url": "https://picsum.photos/400/300/?random=4",
+        "image_url": "https://picsum.photos/600/300/?random=4",
         "title": "test",
-        "item_url": "https://picsum.photos/400/300/?random=4"
+        "item_url": "https://picsum.photos/600/300/?random=4"
       },
       {
         "image_url": "https://picsum.photos/400/300/?random=5",
@@ -32,9 +32,9 @@
         "item_url": "https://picsum.photos/400/300/?random=6"
       },
       {
-        "image_url": "https://picsum.photos/400/300/?random=7",
+        "image_url": "https://picsum.photos/800/300/?random=7",
         "title": "test",
-        "item_url": "https://picsum.photos/400/300/?random=7"
+        "item_url": "https://picsum.photos/800/300/?random=7"
       },
       {
         "image_url": "https://picsum.photos/400/300/?random=8",
@@ -47,7 +47,7 @@
         "item_url": "https://picsum.photos/400/300/?random=9"
       }
     ],
-  "trend":
+  "get_trending":
     [
       {
         "image_url": "https://picsum.photos/400/300/?random=1",
